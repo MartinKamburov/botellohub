@@ -1,4 +1,4 @@
-# botellohub
+# Botellohub
 
 📚 BotelloHub — Your Gateway to the Future of Content Creation
 BotelloHub is the ultimate marketplace and discovery platform for AI-powered content creation tools.
