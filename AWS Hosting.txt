@@ -1,0 +1,8 @@
+The AWS hosting will look like:
+    - React frontend --> S3 + CloudFront
+    - Spring Boot backend --> Elastic Beanstalk
+    - PostgreSQL --> RDS
+
+When uploading the Vite React app stuff to AWS S3 Bucket. Do npm run build first and then add whatever is inside the dist folder.
+
+By default AWS block public access so when making an S3 bucket make sure to disable "Block all public access" in the permissions setting in the S3 Bucket. Since we want users to be able to access the web page.
