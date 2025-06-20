@@ -1,0 +1,38 @@
+The AWS hosting will look like:
+    - React frontend --> S3 + CloudFront
+    - Spring Boot backend --> Elastic Beanstalk
+
+When uploading the Vite React app stuff to AWS S3 Bucket. Do npm run build first and then add whatever is inside the dist folder.
+
+By default AWS block public access so when making an S3 bucket make sure to disable "Block all public access" in the permissions setting in the S3 Bucket. Since we want users to be able to access the web page.
+
+
+Will use Supabase to host the PostgreSQL database
+    - There are two user types in this application:
+        - 1. Creator - uploads or registers AI agent
+        - 2. Consumer/Buyer - browses and purchases or uses the AI agent
+
+High-level overview of the project:
+    - Creators list their AI agents (hosted elsewhere, like GitHub private repos, etc.)
+    - Buyers pay through botellohub for these AI agents
+    - After purchase, buyers get access to the external resource (e.g., a GitHub repo link)
+    - Repo link stays on their account forever
+
+Home Page:
+    - Navbar
+    - Search Bar
+    - Featured Agents (Like a carousel)
+    - Browse by Category
+        • Icons or cards for top categories:
+        • Blog & Article Writing
+        • Social Media Copy
+        • Video & Podcast Scripts
+        • Graphic & Meme Generation
+        • Email & Newsletter Drafts
+        • Click any category to filter your agent directory
+    - Top Rated / Popular This Week
+        • Grid of your most-used or highest-rated agents with star-ratings and usage counts
+        • “See All” link to full directory
+    - FAQ / Support
+    - Newsletter Signup / Blog Teaser (Potentially when more users get added)
+    - Footer
