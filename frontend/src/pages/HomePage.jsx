@@ -1,18 +1,15 @@
-import { useState } from 'react'
-
-import Navbar from '@components/Navbar'
+import NavBar from '@components/NavBar'
 import SearchBar from '@components/SearchBar'
 import Footer from '@components/Footer'
-import FAQ from '@components/FAQ';
+import FAQ from '@components/Faq';
 
 
 export default function HomePage() {
-  const [handleSearch, setHandleSearch] = useState('');
 
   return (
     <>
-      <Navbar />
-      <SearchBar onSearch={handleSearch} />
+      <NavBar />
+      <SearchBar onSearch={() => {}} />
       <FAQ />
 
       <Footer />
