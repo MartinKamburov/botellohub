@@ -9,8 +9,6 @@ import FAQ from '@components/FAQ';
 export default function HomePage() {
   const [handleSearch, setHandleSearch] = useState('');
 
-
-
   return (
     <>
       <Navbar />
