@@ -22,7 +22,8 @@ Home Page:
     - Navbar
     - Search Bar
     - Featured Agents (Like a carousel)
-    - Browse by Category
+    - Clickable containers which show the ai agents and takes you to their page. (Will use this for the beginning until the platform grows)
+    - Browse by Category (Will get added when there are more ai agents being posted)
         • Icons or cards for top categories:
         • Blog & Article Writing
         • Social Media Copy
